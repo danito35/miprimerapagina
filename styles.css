@@ -1,0 +1,191 @@
+body{
+    background-color:orange;
+    color:#053905;
+}
+h1{
+    color: rgba(255, 255, 255, 0.953);
+    font-size: 33px;
+    font-family: cursive;
+    background-color:black;
+    text-align: center;
+}
+body{
+    background-color:rgba(255, 255, 255, 0.805);}
+    p{
+    font-family: cursive;
+      color:rgb(165, 125, 125);
+      font-size: 24px;
+    }
+    h2{
+    font-size:21px;
+    font-family: cursive;
+    color:hwb(29 5% 5% / 0.836);
+    text-align: center;
+    }
+    *{
+        margin: 0x;
+        padding: 0px;
+    }
+    .ejemplo{
+        padding: 10px;
+        border: 1px solid black;
+        margin: 200px 200px 0px 0px;
+    }
+    .ejemplo2{
+        padding: 15px;
+        border: 1px solid red;
+        margin-block: 122px;
+    }
+    .container .title{
+        color: red;
+    }
+    a:active {
+         color: lime; 
+        }
+        a:active { color: lime; }
+        a:visited { color: purple; }
+        a:link {
+            background-color: gold;
+            color: green;
+          }
+          const form = document.getElementById('myForm');
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  validateForm();
+});
+function validateEmail(email) {
+    const regex =  /^[^\s@]+@[^\s@]+\.[^\s@]{2,7}$/
+    return regex.test(email)
+  }
+  function validateForm() {
+    const emailInput = document.getElementById('email');
+    const email = emailInput.value;
+    if (!validateEmail(email)) {
+      alert('Por favor ingrese un correo electrónico válido.');
+    } else {
+      alert('Correo electrónico enviado correctamente.');
+    }
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+  }
+  nav a:hover {
+    color: #1BF7DE;
+  }
+  @media (max-width: 767px) {
+    header {
+      background-color: #cb0e0e;
+    }
+  }
+  @media (max-width:767px) {
+    nav {
+      font-size: 16px;
+    }
+  }
+  @media (min-width: 1200px) {
+    header {
+      width: 1200px;
+    }
+  }
+  .container-nav {
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    background-color: black;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  
+  .brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  li>a {
+    padding: 8px 24px;
+  }
+  
+  
+  li {
+    list-style-type: none;
+  }
+  
+  
+  a {
+    color: white;
+    text-decoration:none;
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .button-menu-toggle {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .column {
+      flex: 100%;
+    }
+  
+  
+    .nav-links {
+      display: none;
+    }
+  
+  
+    .button-menu-toggle {
+      display: block;
+      background-color: white;
+      border:none;
+      border-radius: 50px;
+      padding: 0 24px;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 20px;
+    }
+   
+    .nav-links.nav-links-responsive {
+      position: absolute;
+      display: flex;
+      background-color: rgba(20,20,20,0.95);
+      width: 100%;
+      height: 100%;
+      top: 70px;
+      left: 0;
+      flex-direction: column;
+      padding-top: 200px;
+      align-items: center;
+      gap:70px;
+      font-size: 40px;
+  
+  
+    }
+  }
